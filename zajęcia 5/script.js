@@ -52,3 +52,46 @@ function mojaFunkcja(id) {
   }
 
 }
+
+
+function dodawanie(a, b, c){
+  return a + b + c;
+}
+
+
+function greet(name2) {
+  console.log(`Pozdrawiam ${name2}.`);
+  return name2;
+}
+
+
+function registerGuest(name, parametr) {
+  console.log(`Rejestracja gościa ${name}.`);
+
+  parametr(name);
+}
+
+greet("Kiwi");
+console.log(greet("Kiwi"));
+console.log(greet)
+
+registerGuest("Mango", greet);
+
+
+function processCall(recipient) {
+
+  const liczba = Math.random() > 0.5;
+
+  console.log(liczba);
+  console.log(!liczba);
+
+  if (!liczba) {
+    console.log("Abonent " + recipient + " jest niedostępny, zostaw wiadomość.");
+
+  } else {
+    console.log(`Łączenie z ${recipient}, proszę czekać...`);
+
+  }
+}
+
+processCall("Mango");
