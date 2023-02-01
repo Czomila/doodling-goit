@@ -13,11 +13,11 @@ const przesylka = {
   name: "",
   ulica: "",
 };
-
 const przesylka2 = {
   name: "",
   ulica: "",
 };
+  
 
 przesylka2.waga = 20;
 przesylka.name = "List";
